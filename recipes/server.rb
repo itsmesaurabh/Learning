@@ -4,7 +4,10 @@ end
 
 
 file '/var/www/html/index.html' do
-     content	'<h1>Hello world</h1>'
+     content "<h1>Hello world</h1>
+     HOSTNAME : #{node['hostname']}
+     IPADDRESS: #{node['ipaddress']}"
+
 end
 
 
